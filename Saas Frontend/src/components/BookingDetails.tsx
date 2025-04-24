@@ -8,7 +8,7 @@ const BookingDetails = () => {
     };
   
     return (
-      <aside className="col-span-2 p-4 bg-white rounded-lg shadow-md">
+      <aside className="col-span-1 md:col-span-2 p-4 bg-white rounded-lg shadow-md">
         <span className="bg-purple-700 text-white font-semibold py-1 px-4 rounded-lg mt-4 inline-block ml-10">
           Book Technician
         </span>

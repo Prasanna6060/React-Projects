@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-12 p-2 h-screen">
+    <div className="grid grid-cols-4 md:grid-cols-12 p-2 h-screen">
         <Sidebar/>
         <DashboardMain/>
         <BookingDetails/>

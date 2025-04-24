@@ -7,7 +7,7 @@ const DashboardMain = () => {
     ];
   
     return (
-      <main className="p-6  w-full col-span-8">
+      <main className="p-6  w-full col-span-2 md:col-span-8">
         <div className="flex flex-col">
           <h1 className="font-bold text-2xl">Dashboard</h1>
           <div className="flex gap-6 items-center mt-4">

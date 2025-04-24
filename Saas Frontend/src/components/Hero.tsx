@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 p-2 overflow-hidden">
@@ -26,10 +28,10 @@ const Hero = () => {
 
           <div className="flex flex-col gap-4">
             <button className="bg-blue-600 text-white rounded-xl py-2 font-medium hover:bg-blue-700 transition">
-              Find Technicians
+            <Link to ='/'>Find Technicians </Link>
             </button>
             <button className="border border-blue-600 text-blue-600 rounded-xl py-2 font-medium hover:bg-blue-50">
-              Join as Technician
+              <Link to ='/signup'>Join as Technician</Link>
             </button>
             <button className="border border-blue-600 text-blue-600 rounded-xl py-2 font-medium hover:bg-blue-50">
               Login

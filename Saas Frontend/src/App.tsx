@@ -1,14 +1,14 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Dashboard from './pages/Dashboard'
-
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/Home'
+import SignUpForm from './pages/Signup'
 function App() {
 
   return (
     <>
-    {/* <Header/>
-    <Hero/> */}
-    <Dashboard/>
+    <Routes>
+    <Route path ='/' element = {<HomePage/>}/>
+    <Route path ='/signup' element = {<SignUpForm/>}/>
+    </Routes>
     </>
   )
 }

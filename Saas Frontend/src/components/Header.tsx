@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useGeolocated } from "react-geolocated";
 import axios from "axios";
 import { MapPin } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [city, setCity] = useState("");
@@ -37,7 +38,7 @@ const Header = () => {
     <header className="flex justify-between py-2 px-4 items-center border-b-2 border-gray-700">
       <div>
         <h1 className="text-2xl font-bold hover:cursor-pointer">
-          Book<span className="text-blue-600">Chautari</span>
+          <Link to ='/'>Book<span className="text-blue-600">Chautari</span></Link>
         </h1>
       </div>
       <div>

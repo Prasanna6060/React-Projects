@@ -9,7 +9,7 @@ const navItems = [
 
 const Sidebar = () => {
   return (
-    <aside className="flex flex-col items-center h-[100vh]  p-2 bg-gray-100 border-r-2 border-gray-100 shadow-xl col-span-2">
+    <aside className="flex flex-col items-center h-[100vh]  p-2 bg-gray-100 border-r-2 border-gray-100 shadow-xl  col-span-1 md:col-span-2">
       <h1 className="text-2xl font-bold mb-8">
         Book<span className="text-blue-700">Chautari</span>
       </h1>
@@ -21,7 +21,7 @@ const Sidebar = () => {
               key={index}
               className="flex items-center gap-3 text-gray-700 hover:text-gray-600 cursor-pointer font-bold"
             >
-              {item.icon} {item.label}
+              {item.icon} <span className='hidden md:inline-block'>{item.label}</span>
             </li>
           ))}
         </ul>
