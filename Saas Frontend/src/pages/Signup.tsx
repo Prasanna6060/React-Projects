@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Mail, Lock, User, UserCog } from "lucide-react";
-import Header from "../components/Header";
+import { Mail, Lock, User, } from "lucide-react";
 
 type FormValues = {
   name: string;
@@ -23,7 +22,6 @@ export default function SignUpForm() {
 
   return (
     <>
-    <Header/>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-md mx-auto mt-10 p-6 border rounded-2xl shadow-lg space-y-4"
