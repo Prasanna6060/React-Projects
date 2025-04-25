@@ -7,10 +7,10 @@ const DashboardMain = () => {
     ];
   
     return (
-      <main className="p-6  w-full col-span-2 md:col-span-8">
+      <main className="p-6  w-full col-span-2 md:col-span-8 overflow-y-auto h-[calc(100vh-64px)]">
         <div className="flex flex-col">
           <h1 className="font-bold text-2xl">Dashboard</h1>
-          <div className="flex gap-6 items-center mt-4">
+          <div className="flex flex-wrap gap-6 items-center mt-4">
             <h2 className="py-2 px-4 rounded-lg border border-gray-300">
               Total Bookings <p className="font-semibold text-xl">12</p>
             </h2>
@@ -22,7 +22,7 @@ const DashboardMain = () => {
   
         <div className="mt-6">
           <h1 className="text-center text-xl font-semibold mb-4">Available Technicians</h1>
-          <div className=" justify-center gap-4 grid grid-cols-2">
+          <div className=" justify-center gap-4 grid grid-cols-1 md:grid-cols-2">
             {technicians.map((technician) => (
               <div key={technician.id} className="text-center flex space-x-3 shadow-gray-200 shadow-2xl border-1 rounded-lg p-4 hover:cursor-pointer">
                 <img

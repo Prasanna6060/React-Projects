@@ -43,7 +43,7 @@ const Header = () => {
       </div>
       <div>
         {isGeolocationAvailable && isGeolocationEnabled ? (<div className="flex items-center border-3 border-gray-600 rounded-full p-2">
-            <MapPin /> <h1> <span className=" text-blue-600 font-bold">{city || "loading..."}</span></h1>
+            <MapPin /> <h1> <span className=" font-bold">{city || "loading..."}</span></h1>
         </div>
         ) : (
           <h1>Location not available</h1>
